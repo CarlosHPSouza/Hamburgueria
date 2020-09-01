@@ -1,0 +1,272 @@
+body {
+  background: black;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 100000;
+}
+header.sticky {
+  padding: 5px 100px;
+  background: white;
+}
+header .logo {
+  position: relative;
+  font-family: "Russo One", sans-serif;
+  font-size: 2em;
+  letter-spacing: 2px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.6s;
+}
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  position: relative;
+  list-style: none;
+}
+header ul li a {
+  position: relative;
+  position: relative;
+  font-family: "Russo One", sans-serif;
+  font-size: 1em;
+  letter-spacing: 5px;
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  transition: 0.6s;
+}
+header ul li a:hover {
+  color: #c2231b;
+}
+header.sticky .logo,
+header.sticky ul li a {
+  color: black;
+}
+header.sticky ul li a:hover {
+  color: #c2231b;
+}
+.mySlides img {
+  max-width: 100%;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.1);
+  transform: background 500ms;
+}
+.arrow img {
+  width: 60px;
+}
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+.l {
+  left: 0;
+}
+.r {
+  right: 0;
+}
+
+.sobre-item {
+  margin-top: 60px;
+}
+.sobre-img,
+.sobre-info {
+  flex: 1;
+  margin: 0 10px;
+}
+.sobre-img img {
+  display: block;
+  max-width: 100%;
+}
+.sobre-info {
+  text-align: center;
+}
+.sobre-info p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: white;
+  margin: 45px;
+}
+.sobre-info a {
+  font-family: "Russo One", sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 3px solid;
+  color: white;
+  text-align: center;
+  padding: 5px 20px;
+}
+.sobre-info a:hover {
+  border-bottom: 3px solid #c2231b;
+  transition: 0.6s;
+}
+.cardapio {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.imgBx img {
+  width: 400px;
+}
+.cardapio .box {
+  position: relative;
+  min-width: 350px;
+  height: 480px;
+  background: black;
+  transition: 0.5s;
+  margin: 10px;
+  border: 3px solid white;
+}
+.cardapio .box:hover {
+  border: 3px solid #c2231b;
+  transition: 0.6s;
+}
+.cardapio:hover .box {
+  opacity: 0.2;
+}
+.cardapio .box:hover {
+  opacity: 1;
+}
+.cardapio .box .imgBx {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+.cardapio .box .conteudo {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardapio .box .conteudo {
+  font-family: "Russo One", sans-serif;
+  font-size: 1em;
+  letter-spacing: 5px;
+  color: white;
+}
+.cardapio-lista {
+  text-align: center;
+  margin: 40px;
+}
+.cardapio-lista a {
+  font-family: "Russo One", sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-bottom: 3px solid;
+  text-decoration: none;
+  color: white;
+  padding: 5px 20px;
+}
+.cardapio-lista a:hover {
+  border-bottom: 3px solid #c2231b;
+  transition: 0.6s;
+}
+.delivery {
+  background: #c2231b;
+}
+.delivery h2 {
+  font-family: "Russo One", sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+}
+.imagem-delivery img {
+  margin: 40px 30px;
+}
+.locais-item {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.locais-img,
+.locais-info {
+  flex: 1;
+  margin: 0 10px;
+}
+.locais-img img {
+  display: block;
+  max-width: 100%;
+}
+.locais-info {
+  text-align: center;
+}
+.locais-info h2 {
+  font-family: "Russo One", sans-serif;
+  font-size: 1.125em;
+  letter-spacing: 5px;
+  color: white;
+  margin: 45px;
+}
+.locais-info p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 20px;
+}
+.locais-info a {
+  font-family: "Russo One", sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-bottom: 3px solid;
+  text-decoration: none;
+  color: white;
+  padding: 5px 20px;
+}
+.locais-info a:hover {
+  border-bottom: 3px solid #c2231b;
+  transition: 0.6s;
+}
+.footer {
+  width: 100%;
+  background: #c2231b;
+  color: white;
+  padding: 20px 0;
+}
+.footer h2 {
+  font-family: "Russo One", sans-serif;
+  font-size: 1.125em;
+  letter-spacing: 5px;
+  color: white;
+}
+.footer h2:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: white;
+  margin: 6px 0 12px;
+}
+.footer-contato ul li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.footer-rede img {
+  width: 30px;
+}
+.footer-rede ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
